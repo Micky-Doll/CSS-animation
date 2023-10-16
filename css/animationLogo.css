@@ -1,0 +1,36 @@
+#linkedin-image {
+  width: 50px;
+  height: 50px;
+}
+
+#linkedin-image {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 50px;
+  height: 50px;
+  animation-name: rotateLogo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    filter: grayscale(100%);
+    width: 100px;
+    height: 100px;
+  }
+  25% {
+    filter: grayscale(75%);
+  }
+  40% {
+    filter: hue-rotate(180deg);
+    width: 120px;
+    height: 120px;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    width: 100px;
+    height: 100px;
+  }
+}
